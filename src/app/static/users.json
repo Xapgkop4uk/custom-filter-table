@@ -1,0 +1,24 @@
+[{
+    "email": "test@gmail.com",
+    "plan": "Silver"
+},
+{
+    "email": "test2@gmail.com",
+    "plan": "Silver"
+}, 
+{
+    "email": "test3@gmail.com",
+    "plan": "Gold"
+}, 
+{
+    "email": "test4@gmail.com",
+    "plan": "Gold"
+}, 
+{
+    "email": "test5@gmail.com",
+    "plan": "Platinum"
+}, 
+{
+    "email": "test6@gmail.com",
+    "plan": "Platinum"
+}]
