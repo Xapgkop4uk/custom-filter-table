@@ -1,44 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Test task for a frontend developer
 
-## Available Scripts
+There is a service where a table view is a typical and useful component. One of the examples is a User "list".
+One of the important features of such a view is an ability to filter users. Each user in our system is assigned to a user plan
+There is a common task to show all users that have selected plans. 
 
-In the project directory, you can run:
+So we need a table view with a filter in one column (the user plans column).
+
+## Implementation details
+
+- We use react
+- We use material-ui components
+- For certain reasons we want to use material-table, see the filtering [example](https://material-table.com/#/docs/features/filtering) straight away.
+- We'd like to see customized selects in our app, not defualt material-ui selects. See an [example here](https://material-table.com/#/docs/features/filtering)
+
+## Acceptance criteria
+
+- There is a SPA with one view: a table with users. Columns: email, user plan
+- The user plan column has a filter: a select.
+- I can select a user plan. I can see in the user list onlu those users who has such a user plan.
+- The user plans filter should look like that customized example of the material-ui select (~bootsrap styled select)
+
+### Optional features
+
+- I can select two user plans to filter the user list
+- I can filter options in the plans filter (~autosuggest)
 
 ### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**ll steps completed, please verify by running that command**
