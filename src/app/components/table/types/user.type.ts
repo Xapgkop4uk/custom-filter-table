@@ -1,6 +1,6 @@
-import {IPlan} from './plan.enum';
+import {Plan} from '.';
 
-export interface IUser {
+export interface User {
     email: string;
-    plan: IPlan
+    plan: Plan
 }

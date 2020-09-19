@@ -3,7 +3,7 @@ import MaterialTable, {Column} from 'material-table';
 
 import './Table.css';
 
-import {IUser} from './types';
+import {User} from './types';
 import FilterRow from './filterRow/FilterRow';
 import tableIcons from './icons';
 import {createMuiTheme, MuiThemeProvider, colors} from '@material-ui/core';
@@ -28,18 +28,18 @@ const Table: React.FC = () => {
     },
   });
 
-  const [users, setUsers] = useState<IUser[]>([]);
-  const [columns, setColumns] = useState<Column<IUser>[]>([]);
+  const [users, setUsers] = useState<User[]>([]);
+  const [columns, setColumns] = useState<Column<User>[]>([]);
 
   useEffect(() => {
-    const usersFromFile: IUser[] = require('../../static/users.json');
+    const usersFromFile: User[] = require('../../static/users.json');
     const setOfVariants = new Set([...usersFromFile.map(({plan}) => plan )]);
     const lookup = [...setOfVariants].reduce((acc, variant) => ({
       ...acc,
       [variant]: variant,
     }), {});
 
-    const columns: Column<IUser>[] = [
+    const columns: Column<User>[] = [
       {title: 'Email', field: 'email'},
       {title: 'User Plan', field: 'plan', type: 'string', lookup},
     ];
@@ -57,7 +57,6 @@ const Table: React.FC = () => {
           options={{
             filtering: true,
             search: false,
-
           }}
           components={{
             FilterRow: FilterRow,
