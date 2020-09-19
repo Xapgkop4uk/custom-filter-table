@@ -6,7 +6,6 @@ import {EditCellColumnDef} from 'material-table';
 import {FilterRowProps} from './types';
 
 const FilterRow = (props: FilterRowProps) => {
-  console.log(props);
   const renderComponentForColumn = (columnDef: any) => columnDef.lookup ?
     <LookupFilter {...props} columnDef={columnDef} /> :
     <DefaultFilter {...props} columnDef={columnDef} />;
