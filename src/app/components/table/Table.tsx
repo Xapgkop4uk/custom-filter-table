@@ -33,10 +33,9 @@ const Table: React.FC = () => {
 
   useEffect(() => {
     const usersFromFile: User[] = require('../../static/users.json');
-    const setOfVariants = new Set([...usersFromFile.map(({plan}) => plan )]);
-    const lookup = [...setOfVariants].reduce((acc, variant) => ({
+    const lookup = usersFromFile.reduce((acc, {plan}) => ({
       ...acc,
-      [variant]: variant,
+      [plan]: plan,
     }), {});
 
     const columns: Column<User>[] = [
