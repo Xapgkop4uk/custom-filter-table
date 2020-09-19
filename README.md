@@ -25,5 +25,6 @@ So we need a table view with a filter in one column (the user plans column).
 - I can select two user plans to filter the user list
 - I can filter options in the plans filter (~autosuggest)
 
-### `yarn install and yarn start`
-**All steps completed, please verify by running that commands**
+### How to see result
+- `yarn install and yarn start`
+- [heroku](https://awesome-table-select.herokuapp.com/)
