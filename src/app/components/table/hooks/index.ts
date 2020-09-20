@@ -1,1 +1,5 @@
-export * from './useUsersTable';
+import {useUsersTable} from './useUsersTable';
+
+export {
+  useUsersTable,
+};
